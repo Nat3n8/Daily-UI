@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <main class="maintainer">
+        <header class="header">
+            <h1>Payment Method</h1>
+            <p>Provide your card details to complete this purchase.</p>
+        </header>
+
+        <form action="post" class="checkout">
+            <label for="cc-num-input" id="cc-num-label"><h3>Card Number</h3>
+                <input type="text" name="card-number" id="cc-num-input" placeholder="0123 4567 8910 1112">
+            </label>
+                
+            <label for="cc-name-in" id="cc-name-label"><h3>Cardholder Name</h3>
+                <input type="text" name="card-name" id="cc-name-in" placeholder="John Doe">
+            </label>
+            
+            <div class="checkout-row2">
+                <label for="exp-in" id="exp-label"><h3>Expiry Date</h3>
+                    <input type="text" name="exp-date" id="exp-in" placeholder="MM/YY">
+                </label>
+                
+                <label for="cvv-in" id="cvv-label"><h3>CVV</h3>
+                    <input type="text" name="cvv-number" id="cvv-in" placeholder="123">
+                </label>
+            </div>
+
+            <div class="checkbox-tray">
+                <input type="checkbox" name="save-details" id="save-btn">
+                <label for="save-btn" id="save-label">Save card for future purchases</label>
+            </div>
+            
+            <button type="submit">Pay</button>
+        </form>
+    </main>
+</body>
+</html>
